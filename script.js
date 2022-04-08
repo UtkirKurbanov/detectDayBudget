@@ -40,12 +40,12 @@ let appData = {
   },
   detectDayBudget: function () {
     appData.moneyPerDay = (appData.budget / 30).toFixed();
-    alert("Budget in one day consist: " + appData.moneyPerDay + "us dollar.");
+    alert("Budget in one day consist: " + appData.moneyPerDay + "rubl.");
   },
   detectLevel: function () {
     if (appData.moneyPerDay < 100) {
       console.log("The minimum level of wealth");
-    } else if (appData.moneyPerDay > 100 && appData.moneyPerDay < 2000) {
+    } else if (appData.moneyPerDay > 10 && appData.moneyPerDay < 2000) {
       console.log("The medium level of wealth");
     } else if (appData.moneyPerDay > 2000) {
       console.log("The high level of wealth");
